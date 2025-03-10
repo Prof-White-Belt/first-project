@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Card Game</title>
+
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+
+
+    <div class="instructions">
+      <p>Welcome to "Guess the Card"!</p>
+      <ul>
+        <li>There are 4 suits of cards (Diamonds, Clubs, Hearts, Spades).</li>
+        <li>The cards are shuffled face-down after a random suit is selected.</li>
+        <li>Your task is to find the suit based on memory.</li>
+      </ul>
+    </div>
+
+    <button id="startGameButton"
+       <div> class="cards"</div>
+        <div class="card" id="card1">Diamonds</div>
+        <div class="card" id="card2">Clubs</div>
+        <div class="card" id="card3">Hearts</div>
+        <div class="card" id="card4">Spades</div>
+      </div>
+
+
+    <p class="question">Find the randomly selected suit!</p>
+    <div class="options">
+      <button class="option" id="option1">Card 1</button>
+      <button class="option" id="option2">Card 2</button>
+      <button class="option" id="option3">Card 3</button>
+      <button class="option" id="option4">Card 4</button>
+    </div>  
+
+
+    <button id="submitGuess" class="submit-button" disabled>Submit Guess</button>
+
+
+
+    <div class="feedback">
+      <p id="feedbackMessage">Choose a card to start guessing!</p>
+    </div>
+
 </body>
 </html>
