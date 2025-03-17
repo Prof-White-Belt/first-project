@@ -65,7 +65,7 @@ function getRandomSuit() {
 document.getElementById('shuffleButton').addEventListener('click', function() {
     // Reset card colors before starting the shuffle
     document.querySelectorAll('.card').forEach(card => {
-        card.classList.remove('correct', 'incorrect');  // Remove green and red highlights
+        card.classList.remove('correct', 'incorrect');  // Remove the green and red highlights after
     });
 
     // Initially add the shuffling class to start the animation
@@ -92,13 +92,13 @@ document.getElementById('shuffleButton').addEventListener('click', function() {
         setTimeout(() => {
             updateCardPositions();
         }, 500);  // Delay to match shuffle animation duration
-    }, 1000);  // Set the timeout to match the animation duration (1s)
+    }, 1000);  // Set the timeout to match the animation duration
 });
 
 // Function to update card positions based on shuffled order
 function updateCardPositions() {
     document.querySelectorAll('.card').forEach((card, index) => {
-        setCardPosition(card, index);  // Apply the position for each card in shuffled order
+        setCardPosition(card, index);  
     });
 
     // Enable card clicks for guessing
