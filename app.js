@@ -39,7 +39,6 @@ function startGame() {
 // Shuffle cards using the math.random function to randomize the order of the suits array
 // This function will be called when the user clicks the shuffle button
 // and it will reset the cards to their initial state
-// and start the shuffle animation
 // This function will randomize the order of the suits array
 function shuffleCards() {
     shuffledCards = [...suits];  // Copy of the suits array
