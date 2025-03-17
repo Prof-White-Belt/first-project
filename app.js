@@ -69,11 +69,13 @@ document.getElementById('shuffleButton').addEventListener('click', function() {
     });
 
     // Initially add the shuffling class to start the animation
+    // Grab the class card and iterate 
     document.querySelectorAll('.card').forEach(card => {
         card.classList.add('shuffling');  // Trigger animation
     });
 
     // Reset the cards after the shuffle
+    // Try to figure out this new function
     setTimeout(() => {
         // Reset the cards after shuffle animation ends
         document.querySelectorAll('.card').forEach(card => {
@@ -109,21 +111,21 @@ function updateCardPositions() {
     });
 }
 
-// Function to set the position of each card (example: positioning them in a row)
-function setCardPosition(card, index) {
-    const cardPositions = [0, 1, 2, 3];  // Example positions (you can customize)
-    const randomPos = cardPositions[index];
-    const randomX = randomPos * 120;  // Spread cards across the horizontal axis
 
-    card.style.transition = "transform 0.5s ease";  // Smooth transition
-    card.style.transform = `translateX(${randomX}px)`;  // Move card to its new position
+function setCardPosition(card, index) {
+    const cardPositions = [0, 1, 2, 3];  
+    const randomPos = cardPositions[index];
+    const randomX = randomPos * 120;  
+
+    card.style.transition = "transform 0.5s ease";  // transition
+    card.style.transform = `translateX(${randomX}px)`; 
 }
 
 // Handle card selection and check if the guess is correct
 function guessCard(index) {
     const selectedCardSuit = shuffledCards[index];
 
-    // Check if the clicked card matches the randomly selected suit
+    // Check if the clicked card matches the players guess
     if (selectedCardSuit === randomSuit) {
         document.querySelectorAll('.card')[index].classList.add('correct');  // Turn the card green for correct guess
         document.querySelectorAll('.card')[index].classList.remove('incorrect');  // Ensure it doesn't have the red class
