@@ -13,13 +13,12 @@ The computer will be the dealer who reveals 4 suited cards, the dealer will shuf
 ![img](./images/Screenshot%202025-03-11%20at%2010.02.06 AM.png)
 
 ### Game start
-![img](./images/Screenshot%202025-03-11%20at%2010.02.12 AM.png)
+![img] (<img/Screenshot 2025-03-17 at 8.44.29 AM.png>)
 
 ### Game lose
-![img](./images/Screenshot%202025-03-11%20at%2010.02.16 AM.png)
-
+![img] (<img/Screenshot 2025-03-17 at 8.44.42 AM.png>)
 ### Game win
-![img](./images/Screenshot%202025-03-11%20at%2010.02.20 AM.png)
+![img] (<img/Screenshot 2025-03-17 at 8.44.35 AM.png>)
 
 
 ## USER STORIES 

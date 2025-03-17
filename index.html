@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guess the Card Game</title>
-
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
-
-    <div class="instructions">
-      <p>Welcome to "Guess the Card"!</p>
-      <ul>
-        <li>There are 4 suits of cards (Diamonds, Clubs, Hearts, Spades).</li>
-        <li>The cards are shuffled face-down after a random suit is selected.</li>
-        <li>Your task is to find the suit based on memory.</li>
-      </ul>
+    <!-- Instructions Page -->
+    <div id="instructionsPage">
+        <h1>Welcome to the Shuffle Game!</h1>
+        <p> There are 4 suits of cards.
+            Find the suit that's selected.</p>
+        <button id="startButton">Start Game</button>
     </div>
 
-    <button id="startGameButton"
-       <div> class="cards"</div>
-        <div class="card" id="card1">Diamonds</div>
-        <div class="card" id="card2">Clubs</div>
-        <div class="card" id="card3">Hearts</div>
-        <div class="card" id="card4">Spades</div>
-      </div>
-
-
-    <p class="question">Find the randomly selected suit!</p>
-    <div class="options">
-      <button class="option" id="option1">Card 1</button>
-      <button class="option" id="option2">Card 2</button>
-      <button class="option" id="option3">Card 3</button>
-      <button class="option" id="option4">Card 4</button>
-    </div>  
-
-
-    <button id="submitGuess" class="submit-button" disabled>Submit Guess</button>
-
-
-
-    <div class="feedback">
-      <p id="feedbackMessage">Choose a card to start guessing!</p>
+    <!-- Game Page -->
+    <div id="gamePage" style="display: none;">
+        <!-- Cards Container directly inside the gamePage -->
+        <div id="gameContent">
+            <div id="cardsContainer">
+                <div class="card" id="card1"></div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
+                <div class="card" id="card4"></div>
+            </div>
+            <button id="shuffleButton">Shuffle</button>
+        </div>
+        <div id="message"></div>
     </div>
 
+    <!-- Place your JavaScript at the end to avoid blocking the page load -->
+    <script src="app.js"></script>
 </body>
 </html>

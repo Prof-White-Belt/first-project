@@ -1,0 +1,148 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;      /* Stack elements vertically */
+    align-items: center;         /* Center horizontally */
+    justify-content: center;     /* Center vertically */
+    min-height: 100vh;           /* Full viewport height */
+    background-color: #f0f0f0;  /* Optional: To make the background look nicer */
+}
+
+/* Instructions page background */
+#instructionsPage {
+    background-image: url('../img/shuffle.jpg');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Game page background */
+#gamePage {
+    background-image: url('../img/cards.jpg');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Instructions text and button styling */
+h1, p {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* New container for the cards, inside the gamePage */
+#gameContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;  /* Space between the cards and shuffle button */
+}
+
+/* Cards container - center the cards horizontally above the shuffle button */
+#cardsContainer {
+    display: flex;
+    justify-content: center;    /* Center cards horizontally */
+    align-items: center;        /* Center cards vertically */
+    gap: 20px;                  /* Space between cards */
+    margin-bottom: 20px;        /* Space between the cards and shuffle button */
+}
+
+/* Styling for individual cards */
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Styling for images inside cards */
+.card img {
+    width: 80px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Shuffle animation for the selected card */
+.card.shuffling {
+    animation: shuffleAnimation 1s linear; /* Direct swap animation */
+}
+
+/* Keyframes for shuffling animation */
+@keyframes shuffleAnimation {
+    0% {
+        transform: scale(1); /* Start at original size */
+    }
+    100% {
+        transform: scale(1); /* End at the same size, just swap content */
+    }
+}
+
+/* Message styles */
+#message {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Correct and incorrect feedback styles */
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+/* Card hover effect */
+.card:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Shuffle button styling */
+#gameContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;  /* Space between cards and shuffle button */
+}
