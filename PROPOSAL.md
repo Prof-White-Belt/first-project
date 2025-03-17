@@ -2,7 +2,7 @@
 
 Project Description 
 
-My game is "Guess the Card"
+My game is "Card Shuffle Game"
 This game will consist of 1 player against a computer. 
 The player will always be the the one interacting as the guesser 
 The computer will be the dealer who reveals 4 suited cards, the dealer will shuffle the cards and ask the player to find the position of a suit. 
@@ -10,15 +10,15 @@ The computer will be the dealer who reveals 4 suited cards, the dealer will shuf
 
 ## WIREFRAMES
 ### Landing
-![img](./images/Screenshot%202025-03-11%20at%2010.02.06 AM.png)
+![img](<img/Screenshot 2025-03-11 at 10.02.06 AM.png>)
 
 ### Game start
-![img] (<img/Screenshot 2025-03-17 at 8.44.29 AM.png>)
+![(<img/Screenshot 2025-03-17 at 8.44.29 AM.png>)](<img/Screenshot 2025-03-17 at 8.44.29 AM.png>)
 
 ### Game lose
-![img] (<img/Screenshot 2025-03-17 at 8.44.42 AM.png>)
+![(<img/Screenshot 2025-03-17 at 8.44.42 AM.png>)](<img/Screenshot 2025-03-17 at 8.44.42 AM.png>)
 ### Game win
-![img] (<img/Screenshot 2025-03-17 at 8.44.35 AM.png>)
+![img](<img/Screenshot 2025-03-17 at 8.44.35 AM.png>)
 
 
 ## USER STORIES 
@@ -76,6 +76,7 @@ MVP
 // If the player wants to play again, I will reset the game
 
 // I need to create a function to reset the game
+
 ```
 
 
