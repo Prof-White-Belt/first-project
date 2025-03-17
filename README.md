@@ -44,8 +44,9 @@ This is a fun guessing game where players must find the randomly selected card s
 ---
 
 ### Planner
-[View Planner](https://github.com/Prof-White-Belt/first-project/blob/main/PROPOSAL.md)
+-[View Planner](https://github.com/Prof-White-Belt/first-project/blob/main/PROPOSAL.md)
 
+-[View Repo](https://github.com/Prof-White-Belt/first-project)
 ---
 
 #### External Resources
