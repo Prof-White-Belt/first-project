@@ -1,3 +1,10 @@
+// Emre's notes from project presentation
+// - Text is unreadable at times
+// - Shuffled CSS is off-center!
+// - Challenge yourself more, you can deliver a more feature-full app.
+// - Great code style and good commenting 
+// - Make sure your project has an actual name! 
+
 // I need to create a an array with my suits that will be strings
 const suits = ["Diamond", "Club", "Heart", "Spade"];
 // I have to assign images to each suit in an object
