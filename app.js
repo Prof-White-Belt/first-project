@@ -122,7 +122,8 @@ function updateCardPositions() {
 function setCardPosition(card, index) {
     const cardPositions = [0, 1, 2, 3];  
     const randomPos = cardPositions[index];
-    const randomX = randomPos * 120;  
+    // Lets reduce the translate here just to make it look more centered
+    const randomX = randomPos * 20;  
 
     card.style.transition = "transform 0.5s ease";  // transition
     card.style.transform = `translateX(${randomX}px)`; 
